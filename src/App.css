@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+div {
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    overflow: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#overbody {
+    width: 100%;
+    padding: 40px 20px 0px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#line-1 {
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#header {
+    float: left;
+    color: rgb(119,119,119);
+    font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+#checkout-1 {
+    float: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#body {
+    width: 100%;
+    padding-top: 20px;
+}
+
+#left {
+    float: left;
+    width: 75%;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+#cart {
+    padding: 20px;
+    border: 1px solid rgb(236,236,236);
+    box-shadow: 1px 1px 2px rgb(236,236,236);
+}
+
+#right {
+    float: right;
+    width: 25%;
+}
+
+#shipping-container {
+    border: 1px solid rgb(221, 221, 221)
+}
+
+#totals {
+    border: 1px solid rgb(221, 221, 221)
+}
+
+#cart-totals {
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+table {
+    width: 100%;
+    overflow: auto;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    color: rgb(119,119,119);
+    font-weight: bolder;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+td {
+    color: rgb(119,119,119);
+}
+
+.price {
+    font-weight: bold;
+}
+
+tbody td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+tfoot td {
+    padding-top: 10px;
+}
+
+th, tbody td {
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.counter {
+    width: 30px;
+    height: 30px;
+}
+
+#field {
+    border: 2px inset rgb(118,118,118);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#edit, #x {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    background-color: white;
+}
+
+#shipping, #subtotal-text, #grandtotal-text {
+    float: left;
+}
+
+#total, #subtotal-number, #grandtotal-number {
+    float: right;
+}
+
+#grandtotal-line, #subtotal-line {
+    padding: 0px 10px 0px 10px;
+}
+
+#shipping-container, #cart-totals {
+    background-color: rgb(245, 245, 245);
+    font-weight: bold;
+}
+
+#subtotal-text, #grandtotal-text {
+    color: rgb(118,118,118);
+}
+
+#totals-main {
+    background-color: rgb(251, 251, 251);
+    font-weight: bold;
+}
+
+#grandtotal-number {
+    font-size: 20px;
+}
+
+#shipping-container {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#cart-totals {
+    padding: 10px;
+}
+
+#totals-main {
+    padding: 10px;
+}
+
+#calculation {
+    margin: 10px 0px 20px 0px;
+}
+
+#calculation hr {
+    border: 1px solid rgb(221, 221, 221);
+}
+
+#checkout-1, #checkout-2, #cart-update {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+#checkout-2, #cart-update {
+    width: 100%;
+    font-weight: bold;
 }
